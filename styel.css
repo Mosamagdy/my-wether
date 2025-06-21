@@ -1,0 +1,95 @@
+
+body {
+  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.input-field, .input-button {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  font-size: 16px;
+}
+
+.input-button {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.input-button:hover {
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+/* === Weather Card Styles === */
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: scale(1.03);
+}
+
+.weather-icon {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+
+.end {
+  background-color: #111827;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+.end .ico i {
+  font-size: 26px;
+  margin: 0 12px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.end .ico i:hover {
+  transform: scale(1.2);
+  color: #00f2fe;
+}
+
+
+@media (max-width: 768px) {
+  .input-field, .input-button {
+    width: 90%;
+  }
+
+  .weather-card {
+    width: 95%;
+  }
+}
